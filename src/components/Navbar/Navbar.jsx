@@ -7,22 +7,25 @@ const Navbar = () => {
     return (
         <nav className={s.nav}>
             <div className={s.item}>
-                <NavLink to='/profile' activeClassName={s.active}>Profile</NavLink>
-            </div>
-            <div className={`${s.item} ${s.active}`}>
-                <NavLink to='/messages'>Messages</NavLink>
-            </div>
-            <div className={s.item}>
-                <a>News</a>
-            </div>
-            <div className={s.item}>
-                <a>Music</a>
-            </div>
-            <div className={s.item}>
-                <a>Settings</a>
+                <ul className={s.style}>
+                    <li className={s.item}>
+                        <NavLink to='/profile' activeClassName={s.active}>Profile</NavLink>
+                    </li>
+                    <li className={`${s.item} ${s.active}`}>
+                        <NavLink to='/messages' activeClassName={s.active}>Messages</NavLink>
+                    </li>
+                    <li className={s.item}>
+                        <NavLink to='/news' activeClassName={s.active}>News</NavLink>
+                    </li>
+                    <li className={s.item}>
+                        <NavLink to='/music' activeClassName={s.active}>Music</NavLink>
+                    </li>
+                    <li className={s.item}>
+                        <NavLink to='/settings' activeClassName={s.active}>Settings</NavLink>
+                    </li>
+                </ul>
             </div>
         </nav>
     )
 };
-
 export default Navbar;
