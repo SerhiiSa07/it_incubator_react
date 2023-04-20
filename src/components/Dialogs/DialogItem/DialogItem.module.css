@@ -1,0 +1,8 @@
+
+.dialogsItems{
+    padding: 20px;
+    line-height: 40px;
+}
+.dialogsItems .active{
+    color: red;
+}
